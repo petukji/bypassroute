@@ -1,0 +1,20 @@
+{
+  "projects": {},
+  "targets": {
+    "default": {
+      "hosting": {
+        "one17": [
+          "petuk-8d921"
+        ]
+      }
+    },
+    "petuk-8d921": {
+      "hosting": {
+        "petukji": [
+          "petuk-8d921"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

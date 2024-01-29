@@ -1,0 +1,61 @@
+{
+  "hosting": [
+	  {
+		"target": "one17",
+		"public": "public/one17",
+		"ignore": [
+		  "firebase.json",
+		  "**/.*",
+		  "**/node_modules/**"
+		],
+		"appAssociation": "AUTO",
+		"rewrites": [ { "source": "/PetukJi/share/**", "dynamicLinks": true },
+		{
+		  "source": "/PetukJi/promo/**",
+		  "dynamicLinks": true
+		},
+{
+		  "source": "/Apps/**",
+		  "dynamicLinks": true
+		} ]
+	  },
+	  {
+		"target": "petukji",
+		"public": "public/petukji",
+		"ignore": [
+		  "firebase.json",
+		  "**/.*",
+		  "**/node_modules/**"
+		],
+		"appAssociation": "AUTO",
+		"rewrites": [ { "source": "/App/**", 
+		"dynamicLinks": true 
+		} ]
+	  },
+		{
+		"target": "pndcbusiness",
+		"public": "public/petukjibusiness",
+		"ignore": [
+		  "firebase.json",
+		  "**/.*",
+		  "**/node_modules/**"
+		],
+		"appAssociation": "AUTO",
+		"rewrites": [ { "source": "/office/**", 
+		"dynamicLinks": true 
+		} ]
+	  }
+
+  ],
+  "emulators": {
+    "database": {
+      "port": 9000
+    },
+    "ui": {
+      "enabled": true
+    },
+    "functions": {
+      "port": 5001
+    }
+  }
+}
